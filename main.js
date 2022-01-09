@@ -15,8 +15,7 @@ ae.extractAudioFromVideo(process.argv[2]+ ".mp4", process.argv[2]+ ".mp3" )
 
 index.extractImagesFromVideo(process.argv[2]+".mp4", process.argv[2] + '_frames/' +  process.argv[2] + '_%03d.jpg');
 
-//dcpFile.getImages(process.argv[2],parseInt(process.argv[3]));
-
+dcpFile.getImages(process.argv[2],parseInt(process.argv[3]));
 
 itv.imageToVideo(process.argv[2] + '_frames/' +  process.argv[2] + '_%03d.jpg', process.argv[2] + "na.mp4");
 
