@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/JosephAcernese/DCP_Video_Project#readme",
   "dependencies": {
+    "cors": "^2.8.5",
     "express": "^4.17.2",
     "install": "^0.13.0"
   }
