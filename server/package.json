@@ -1,0 +1,24 @@
+{
+  "name": "my_server",
+  "version": "1.0.0",
+  "description": "Web server for processing/handling videos with DCP",
+  "main": "app.js",
+  "scripts": {
+    "test": "",
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JosephAcernese/DCP_Video_Project.git"
+  },
+  "author": "Taha & Joe",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JosephAcernese/DCP_Video_Project/issues"
+  },
+  "homepage": "https://github.com/JosephAcernese/DCP_Video_Project#readme",
+  "dependencies": {
+    "express": "^4.17.2",
+    "install": "^0.13.0"
+  }
+}
