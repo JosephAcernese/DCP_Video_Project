@@ -1,8 +1,6 @@
 var Jimp = require('jimp');
 
 
-
-
 async function getImages(fileName,frameCount){
     
     await require('dcp-client').init();
@@ -157,7 +155,7 @@ async function getImages(fileName,frameCount){
 
     }
 
-    process.exit();
+    return;
 
 
 }
