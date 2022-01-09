@@ -39,7 +39,7 @@ export default function SignIn() {
     event.preventDefault();
     const data = new FormData(event.currentTarget);
     data.append("file", file);
-    fetch(" https://dcp-video-processor.herokuapp.com//video", {
+    fetch("http://localhost:5000/video", {
       method: "POST",
       body: data,
     })
@@ -50,7 +50,6 @@ export default function SignIn() {
         console.log(err);
       });
     // eslint-disable-next-line no-console
-    console.log(event.files);
   };
   const handleChange = (event) => {
     setFile(event.target.files[0]);
