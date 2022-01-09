@@ -22,8 +22,6 @@ const combiner = (input_video, input_audio, output_path) => {
     console.log(`stdout: ${stdout}`);
   });
 };
-combiner(
-  "final_test.mp4",
-  "Amy_Waitress_Character_Animation.wav",
-  "combined.mp4"
-);
+
+
+module.exports = {combiner};

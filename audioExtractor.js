@@ -22,4 +22,6 @@ const extractAudioFromVideo = (input, output) => {
     console.log(`stdout: ${stdout}`);
   });
 };
-extractAudioFromVideo(input_file, output_file);
+
+
+module.exports = {extractAudioFromVideo};

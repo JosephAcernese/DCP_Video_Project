@@ -5,12 +5,12 @@ const {exec} = require('child_process');
 
 const { stdout, stderr } = require('process');
 
-const input_file = 'test.mp4'
-const output_file = 'test_frames/test_%03d.jpg'
+const input_file = 'pointer.mp4'
+const output_file = 'pointer_frames/pointer_%03d.jpg'
 
 
 const extractImagesFromVideo = (input, output) => {
-    const cmd_line_args = `ffmpeg -i ${input} -qscale:v 2 ${output}`
+    const cmd_line_args = `ffmpeg -i ${input} ${output}`
     exec(cmd_line_args, (error, stdout, stderr) => {
         if (error) {
             console.log(`error: ${error.message}`);
@@ -24,5 +24,8 @@ const extractImagesFromVideo = (input, output) => {
     })
 }
 
-extractImagesFromVideo(input_file, output_file);
+
+
+
+module.exports = {extractImagesFromVideo};
 

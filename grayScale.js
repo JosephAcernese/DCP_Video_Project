@@ -1,8 +1,6 @@
 var Jimp = require('jimp');
 
 
-getImages("pointer",100);
-
 
 
 async function getImages(fileName,frameCount){
@@ -226,4 +224,4 @@ try{
 
 
 
-
+module.exports = {grayScale,getImages};
